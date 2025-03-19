@@ -1,0 +1,94 @@
+.judges {
+  padding: 60px 0 120px;
+
+  @include vp-1365 {
+    padding: 42px 0 100px;
+  }
+
+  @include vp-767 {
+    padding: 41px 0 70px;
+  }
+}
+
+.judges__title {
+  margin-bottom: 45px;
+  letter-spacing: 4.5px;
+
+  @include vp-1365 {
+    margin: 0 auto 39px;
+    text-align: center;
+    letter-spacing: 1.55px;
+  }
+
+  @include vp-767 {
+    margin: 0 auto 41px;
+  }
+}
+
+.judges__slider {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  @include vp-1365 {
+    max-width: 686px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+    padding: 0 32px;
+  }
+}
+
+.slider__button--prev {
+  left: -14px;
+
+  svg {
+    position: absolute;
+    bottom: 19%;
+    left: 28%;
+  }
+
+  @include vp-1365 {
+    left: -13px;
+  }
+
+  @include vp-767 {
+    left: -6px;
+
+    svg {
+      width: 10px;
+      height: 19px;
+    }
+  }
+}
+
+.slider__button--next {
+  right: -14px;
+
+  svg {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 19%;
+    left: 28%;
+  }
+
+  @include vp-1365 {
+    right: -13px;
+  }
+
+  @include vp-767 {
+    right: -6px;
+
+    svg {
+      width: 10px;
+      height: 19px;
+    }
+  }
+}
+
+.judges__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

@@ -1,0 +1,62 @@
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1365 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin: 43px 0 5px;
+  }
+
+  @include vp-767 {
+    gap: 35px;
+    margin: 34px 0 5px;
+  }
+}
+
+.card-list__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 61px 20px 58px;
+  text-align: center;
+  background-color: $color-default-white;
+  border: 7px solid rgba(232, 232, 232, 0);
+  width: 360px;
+
+  @include vp-1365 {
+    width: 440px;
+    padding: 60px 20px 56px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 42px 20px 43px;
+  }
+}
+
+.card-list__item:hover,
+.card-list__item:focus-within {
+  padding: 61px 20px 58px;
+
+  border: 7px solid;
+  border-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
+  border-image-slice: 1;
+
+  .card__button {
+    color: $color-default-white;
+    background-color: $color-main;
+    background-image: $gradient;
+    box-shadow: none;
+  }
+
+  @include vp-767 {
+    padding: 42px 20px 43px;
+  }
+}

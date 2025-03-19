@@ -1,0 +1,161 @@
+.games {
+  padding: 120px 0 60px;
+
+  @include vp-1365 {
+    padding: 100px 0 60px;
+  }
+
+  @include vp-767 {
+    padding: 70px 0 30px;
+  }
+}
+
+.games__container {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+
+  @include vp-1365 {
+    grid-template-columns: 291px 1fr;
+  }
+}
+
+.games__wrapper {
+  display: grid;
+  grid-template-columns: 107px 1fr;
+  gap: 22px 141px;
+  align-content: start;
+  padding: 80px;
+  color: $color-default-white;
+  background-color: $color-main-contrast;
+
+  @include vp-1365 {
+    width: 293px;
+    padding: 41px 45px 45px;
+    gap: 6px 39px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    gap: 12px 47px;
+    padding: 40px;
+  }
+}
+
+.games__title {
+  margin: 0 0 0 2px;
+  font-family: $font-alumni;
+  font-size: 76px;
+  font-weight: 600;
+  line-height: 76px;
+  letter-spacing: 5.25px;
+
+  @media (width >= 1366px) {
+    order: 1;
+  }
+
+  @include vp-1365 {
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 1.44px;
+    width: 106px;
+  }
+
+  @include vp-767 {
+    font-size: 46px;
+    letter-spacing: 2.4px;
+  }
+}
+
+.games__description {
+  grid-column: 1 / -1;
+  margin: 0 0 0 3px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+
+  @media (width >= 1366px) {
+    order: 3;
+  }
+
+  @include vp-1365 {
+    margin: 0;
+    width: 202px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    width: 173px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+  }
+}
+
+.games__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: -3px 0 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (width >= 1366px) {
+    order: 2;
+  }
+
+  @include vp-1365 {
+    width: 56px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+.games__button {
+  grid-column: 1 / -1;
+  max-width: none;
+  margin-top: 34px;
+
+  @media (width >= 1366px) {
+    order: 4;
+  }
+
+  @include vp-1365 {
+    margin-top: 15px;
+  }
+
+  @include vp-767 {
+    margin-top: 9px;
+  }
+}
+
+.games__image {
+  background-color: $color-main-contrast;
+
+  @include vp-1365 {
+    display: block;
+    width: 386px;
+
+    picture {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @include vp-767 {
+    width: 290px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    picture {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

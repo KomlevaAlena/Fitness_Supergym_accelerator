@@ -1,0 +1,50 @@
+.subscription {
+  position: relative;
+  z-index: 1;
+  overflow: unset;
+  padding: 125px 0 120px;
+  background-color: #f8f9fc;
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -11%;
+    width: 308px;
+    height: 384px;
+    background-image: url("../img/weight-plates.webp");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  @include vp-1365 {
+    padding: 101px 0 146px;
+
+    &::before {
+      right: 281px;
+      bottom: -7.35%;
+    }
+  }
+
+  @include vp-767 {
+    padding: 31px 0 104px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.subscription__title {
+  margin-bottom: 25px;
+  text-align: center;
+
+  @include vp-1365 {
+    letter-spacing: 1.9px;
+  }
+
+  @include vp-767 {
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+}

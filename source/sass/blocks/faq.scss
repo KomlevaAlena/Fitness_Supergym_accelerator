@@ -1,0 +1,115 @@
+.faq {
+  padding: 120px 0 121px;
+  background-color: #f8f9fc;
+
+  @include vp-1365 {
+    padding: 101px 0 99px;
+  }
+
+  @include vp-767 {
+    padding: 71px 0 70px;
+  }
+}
+
+.faq__title {
+  margin-bottom: 51px;
+  letter-spacing: 2.9px;
+
+  @include vp-1365 {
+    text-align: center;
+    margin-bottom: 49px;
+    letter-spacing: 1.6px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 36px;
+    letter-spacing: 1px;
+  }
+}
+
+.faq__wrapper-content {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+
+  @include vp-767 {
+    gap: 29px;
+  }
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1365 {
+    width: 678px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 8px;
+  }
+}
+
+.faq__item {
+  @include vp-1365 {
+    justify-self: stretch;
+    width: 100%;
+  }
+}
+
+.faq__wrapper {
+  @include vp-1365 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+}
+
+.faq__button {
+  max-width: none;
+  padding: 19px 20px 17px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: none;
+  letter-spacing: normal;
+  box-shadow: 0 0 0 2px rgba($color-main, 0.2) inset;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $color-main;
+    background: none;
+    box-shadow: 0 0 0 2px $color-main inset;
+  }
+
+  @include vp-1365 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    padding: 15px 20px 11px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.faq__button.is-active {
+  color: $color-default-white;
+  background-color: $color-main;
+  background-image: $gradient;
+  box-shadow: none;
+}

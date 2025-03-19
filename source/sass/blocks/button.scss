@@ -1,0 +1,70 @@
+.button {
+  display: block;
+  width: 100%;
+  max-width: 230px;
+  padding: 27px 20px;
+
+  font-family: $font-roboto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  color: $color-default-white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 0 0 2px $color-default-white inset;
+  transition: opacity $trans-default;
+  cursor: pointer;
+  user-select: none;
+
+  @include vp-1365 {
+    padding: 22px 20px;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $color-main-lignt;
+    background-color: $color-default-white;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-main;
+  }
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &--dark {
+    color: $color-main;
+    background-color: $color-default-white;
+    box-shadow: 0 0 0 2px $color-main inset;
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      color: $color-default-white;
+      background-color: $color-main;
+      background-image: $gradient;
+      box-shadow: none;
+    }
+
+    &:active {
+      color: rgba($color-default-white, 0.7);
+    }
+
+    &:disabled {
+      opacity: 0.3;
+    }
+  }
+}

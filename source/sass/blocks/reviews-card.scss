@@ -1,0 +1,143 @@
+.reviews-card {
+  gap: 10px 30px;
+  padding: 61px 60px 43px;
+  color: $color-default-white;
+  visibility: hidden;
+  opacity: 0;
+  background-color: $color-main-light2;
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+}
+
+.reviews-card.is-visible {
+  visibility: visible;
+  opacity: 1;
+  display: grid;
+}
+
+.reviews-card img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-column: 1/2;
+  grid-row: 1/3;
+
+  @include vp-767 {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.reviews-card__content {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.reviews-card__title {
+  margin: 0 0 20px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.reviews-card__description {
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+}
+
+@include vp-1365 {
+  .reviews-card {
+    column-gap: 22px;
+    padding: 60px 65px 45px;
+  }
+
+  .reviews-card.swiper-slide {
+    display: grid;
+    grid-template-columns: auto/auto 1fr;
+  }
+
+  .reviews-card picture {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+    @include vp-767 {
+      width: 68px;
+      height: 68px;
+      grid-column: 1/3;
+      grid-row: 1/2;
+      margin: 0 auto;
+    }
+  }
+
+  .reviews-card__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 330px;
+    margin: 0;
+    padding: 0;
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+
+  .reviews-card__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .reviews-card__description {
+    margin-top: 12px;
+    margin-left: 0;
+    max-width: 330px;
+  }
+}
+
+@include vp-767 {
+  .reviews-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 226px;
+    margin: 0 auto;
+    padding: 30px 25px 29px;
+    row-gap: 0;
+    text-align: center;
+
+    .reviews-card__content {
+      width: 176px;
+      margin: 0;
+      padding: 0;
+      grid-column: 1/3;
+      grid-row: 2/3;
+    }
+
+    .reviews-card__title {
+      width: 176px;
+      margin: 0 auto;
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: -1.2px;
+    }
+
+    .reviews-card__description {
+      width: 176px;
+      margin: 17px auto 0;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

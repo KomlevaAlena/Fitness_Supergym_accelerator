@@ -1,0 +1,291 @@
+.gym {
+  padding: 114px 0 121px;
+
+  @include vp-1365 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 71px 0 30px;
+  }
+}
+
+.gym__container {
+  display: grid;
+  grid-template-columns: 355px 1fr;
+  gap: 83px;
+
+  @include vp-1365 {
+    display: block;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.gym__description {
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.gym__media {
+  position: relative;
+  padding: 6px 0 115px 62px;
+
+  @include vp-1365 {
+    margin: 0 auto;
+    padding: 38px 0 83px;
+  }
+
+  @include vp-767 {
+    padding: 52px 0 83px;
+  }
+}
+
+.gym__title {
+  margin-bottom: 31px;
+  font-size: 52px;
+  letter-spacing: 3.2px;
+
+  @include vp-1365 {
+    margin-bottom: 0;
+    font-size: 42px;
+    letter-spacing: 1.9px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 4px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.gym__subtitle {
+  margin: 0 0 93px;
+  font-size: 22px;
+  line-height: 22px;
+
+  @include vp-1365 {
+    margin: 20px 0 34px -5px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+
+  @include vp-767 {
+    margin: 14px 0 38px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+}
+
+.gym__text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+
+  & + & {
+    margin-top: 8px;
+  }
+
+  @include vp-1365 {
+    margin: 0 auto;
+    max-width: 507px;
+
+    &:last-of-type {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    margin: 0;
+    max-width: 280px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.gym__image {
+  display: block;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @include vp-767 {
+    padding: 0 0 40px;
+  }
+}
+
+.gym__video {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  width: 50.3%;
+
+  @include vp-1365 {
+    left: 50%;
+    top: 300px;
+    transform: translateX(-50%);
+    width: 39.3%;
+  }
+
+  @include vp-767 {
+    position: relative;
+    inset: auto;
+    transform: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(20, 54, 122, 0.5);
+  }
+}
+
+.gym__video svg {
+  width: 100%;
+  height: 100%;
+}
+
+.gym__video img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gym__video-button {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  fill: #ffffff;
+
+  @include vp-1365 {
+    width: 73px;
+    height: 73px;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
+  &::before {
+    width: 70px;
+    height: 70px;
+    padding: 2px;
+    background-image: linear-gradient(-90deg, #003d85 0%, #b80027 89%);
+
+    @include vp-1365 {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  &::after {
+    width: 100px;
+    height: 100px;
+    padding: 2px;
+    background-image:
+      linear-gradient(to left top,
+      rgba(237, 2, 53, 0.2),
+      rgba(0, 61, 183, 0.2));
+    mask: linear-gradient(#ffffff 0 0) content-box, linear-gradient(#ffffff 0 0);
+
+    @include vp-1365 {
+      width: 73px;
+      height: 73px;
+    }
+
+    mask-composite: exclude;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #102654;
+
+    &::before {
+      background-color: #ffffff;
+      background-image: none;
+    }
+
+    &::after {
+      background-color: #102654;
+      background-image: none;
+    }
+  }
+
+  &:active {
+    fill: #102654;
+
+    &::before {
+      width: 58px;
+      height: 58px;
+
+      background-color: #ffffff;
+      background-image: none;
+    }
+
+    &::after {
+      background-color: #102654;
+      background-image: none;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.4;
+
+    fill: #102654;
+
+    &::before {
+      background-color: #ffffff;
+      background-image: none;
+    }
+
+    &::after {
+      background-color: #102654;
+      background-image: none;
+    }
+  }
+}
+
+.gym__video-player {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.gym__video-player.is-show {
+  display: block;
+}

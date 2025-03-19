@@ -1,4 +1,48 @@
-// Vendor
-// ---------------------------------
-
+/// Vendor
 @import "vendor/normalize";
+@import "vendor/data-tabs";
+@import "vendor/data-accordion";
+@import "vendor/swiper";
+
+// Global
+@import "global/mixins";
+@import "global/variables";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+@import "blocks/button";
+@import "blocks/title";
+@import "blocks/modal";
+@import "blocks/slider";
+@import "blocks/form";
+@import "blocks/main-header";
+@import "blocks/main-nav";
+@import "blocks/hero";
+@import "blocks/gym";
+@import "blocks/subscription";
+@import "blocks/filter-list";
+@import "blocks/card-list";
+@import "blocks/card";
+@import "blocks/games";
+@import "blocks/games-card";
+@import "blocks/judges";
+@import "blocks/judges-card";
+@import "blocks/advantages";
+@import "blocks/discounts";
+@import "blocks/discounts-card";
+@import "blocks/data-accordion";
+@import "blocks/faq";
+@import "blocks/accordion";
+@import "blocks/reviews";
+@import "blocks/reviews-card";
+@import "blocks/feedback";
+@import "blocks/free";
+@import "blocks/contacts";
+@import "blocks/contacts-card";
+@import "blocks/footer";
+@import "blocks/nav-list";
+@import "blocks/social-list";
+

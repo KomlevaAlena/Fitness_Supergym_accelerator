@@ -1,0 +1,20 @@
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1366px;
+
+  // планшетная версия — 768px - 1365px;
+
+  @include vp-1365 {
+    padding: 0 45px;
+    width: 768px;
+  }
+
+  // мобильная версия — 320px - 767px;
+  @include vp-767 {
+    padding: 0 15px;
+    width: 320px;
+  }
+}

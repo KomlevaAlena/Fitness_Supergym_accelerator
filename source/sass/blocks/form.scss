@@ -1,0 +1,81 @@
+.form__group {
+  position: relative;
+
+  @include vp-767 {
+    &:first-of-type {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+
+    &:last-of-type {
+      grid-column: 1/3;
+      grid-row: 2/3;
+    }
+  }
+}
+
+.form__group input {
+  width: 100%;
+  padding: 6px 0 4px;
+  font-family: $font-roboto;
+  font-size: 14px;
+  line-height: 22px;
+  color: $color-default-white;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom-color: rgba($color-default-white, 0.5);
+
+  &::placeholder {
+    color: $color-default-white;
+    opacity: 1;
+  }
+
+  &:hover {
+    border-bottom-color: $color-default-white;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:active {
+    border-color: $color-default-white;
+    outline: none;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    border-color: transparent;
+    border-bottom-color: rgba($color-default-white, 0.3);
+    pointer-events: none;
+
+    &::placeholder {
+      color: rgba($color-default-white, 0.4);
+    }
+  }
+
+  @include vp-1365 {
+    padding: 8px 0 4px;
+    font-size: 16px;
+  }
+
+  @include vp-767 {
+    padding: 9px 0 3px;
+    margin: 0 0 24px;
+    font-size: 14px;
+  }
+}
+
+.form__group.is-invalid input {
+  border-bottom-color: #ff121f;
+}
+
+.form__group .input-message {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 14px;
+  line-height: 22px;
+}

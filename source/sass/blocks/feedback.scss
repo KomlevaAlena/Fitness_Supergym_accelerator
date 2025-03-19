@@ -1,0 +1,21 @@
+.feedback {
+  background-image: linear-gradient(90deg, $color-main 50%, $color-default-white 50%);
+  border-top: 1px solid #74819c;
+
+  @include vp-1365 {
+    background-image: linear-gradient(-180deg, $color-main 47.8%, $color-default-white 47.8%);
+  }
+
+  @include vp-767 {
+    background-image: linear-gradient(-180deg, $color-main 44.2%, $color-default-white 44.2%);
+  }
+}
+
+.feedback__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include vp-1365 {
+    display: block;
+  }
+}
