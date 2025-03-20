@@ -48,8 +48,10 @@
 
 .gym__title {
   margin-bottom: 31px;
-  font-size: 52px;
-  letter-spacing: 3.2px;
+  font-size: 54px;
+  line-height: 54px;
+  // letter-spacing: 3.2px;
+  letter-spacing: 2.4px;
 
   @include vp-1365 {
     margin-bottom: 0;
