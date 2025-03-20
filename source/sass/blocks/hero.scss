@@ -30,7 +30,7 @@
 .hero__content {
   display: grid;
   grid-template-columns: 114px 1fr;
-  gap: 11px 24px;
+  gap: 11px 21px;
   align-content: start;
   padding-top: 62px;
 
@@ -48,7 +48,7 @@
 .hero span {
   grid-column: 1/-1;
   order: -1;
-  margin-right: 3px;
+  // margin-right: 3px;
   font-family: $font-alumni;
   font-size: 52px;
   font-weight: 600;
@@ -74,13 +74,14 @@
 
 .hero h1 {
   margin: 0;
-  font-family: $font-alumni;
-  font-size: 86px;
+  font-family: $font-alumni-extrabold;
+  font-size: 92px;
   font-weight: 800;
   line-height: 110px;
   text-align: right;
   text-transform: uppercase;
-  letter-spacing: 7.95px;
+  letter-spacing: 4.5px;
+  // padding-right: 2px;
 
   @include vp-1365 {
     font-size: 68px;
@@ -99,12 +100,13 @@
   align-self: end;
   order: -1;
   margin: 0;
-  padding: 52px 0;
+  padding: 52px 2px 51px 0;
   font-family: $font-roboto;
   font-size: 14px;
   line-height: 22px;
   text-align: right;
   list-style: none;
+  letter-spacing: -0.05px;
 
   @include vp-1365 {
     padding: 24px 0;
@@ -132,7 +134,7 @@
 .hero__button {
   grid-column: 1/-1;
   width: 234px;
-  margin: 38px 3px 0 auto;
+  margin: 38px 0 0 auto;
 
   @include vp-1365 {
     width: 186px;
