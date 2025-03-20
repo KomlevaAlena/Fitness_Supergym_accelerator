@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 33px 0 27px;
+  padding: 30px 0 27px;
   margin: 0 auto;
 
   @include vp-1365 {
@@ -16,7 +16,7 @@
 
 .main-nav__logo-link {
   display: block;
-  width: 120px;
+  width: 130px;
   height: 26px;
   padding: 0;
   user-select: none;
@@ -57,7 +57,8 @@
   font-size: 26px;
   font-weight: 700;
   text-decoration: none;
-  line-height: 20px;
+  line-height: 30px;
+  // letter-spacing: -0.35px;
   color: $color-default-white;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   user-select: none;

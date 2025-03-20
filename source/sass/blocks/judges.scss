@@ -11,8 +11,9 @@
 }
 
 .judges__title {
-  margin-bottom: 45px;
-  letter-spacing: 4.5px;
+  margin: 0 auto 45px;
+  letter-spacing: 4px;
+  width: max-content;
 
   @include vp-1365 {
     margin: 0 auto 39px;
