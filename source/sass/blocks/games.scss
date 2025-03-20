@@ -46,10 +46,10 @@
 .games__title {
   margin: 0 0 0 2px;
   font-family: $font-alumni;
-  font-size: 76px;
+  font-size: 80px;
   font-weight: 600;
   line-height: 76px;
-  letter-spacing: 5.25px;
+  letter-spacing: 3px;
 
   @media (width >= 1366px) {
     order: 1;
@@ -73,7 +73,7 @@
   margin: 0 0 0 3px;
   font-size: 18px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 22px;
   letter-spacing: -0.25px;
 
   @media (width >= 1366px) {
@@ -118,7 +118,8 @@
 .games__button {
   grid-column: 1 / -1;
   max-width: none;
-  margin-top: 34px;
+  margin-top: 36px;
+  padding: 27px 20px 25px 20px;
 
   @media (width >= 1366px) {
     order: 4;
