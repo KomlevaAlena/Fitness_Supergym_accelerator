@@ -51,7 +51,9 @@
   font-size: 54px;
   line-height: 54px;
   // letter-spacing: 3.2px;
-  letter-spacing: 2.4px;
+  letter-spacing: 0.1px;
+  font-family: $font-alumni-semibold;
+  font-weight: 600;
 
   @include vp-1365 {
     margin-bottom: 0;
