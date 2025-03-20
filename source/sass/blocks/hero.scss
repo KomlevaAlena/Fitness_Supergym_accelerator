@@ -13,9 +13,11 @@
 }
 
 .hero__wrapper {
+  width: 941px;
+  margin: 28px 0 0 147px;
   display: grid;
   grid-template-columns: 385px auto;
-  gap: 70px;
+  gap: 56px;
 
   @include vp-1365 {
     grid-template-columns: repeat(2, 1fr);
@@ -30,9 +32,9 @@
 .hero__content {
   display: grid;
   grid-template-columns: 114px 1fr;
-  gap: 11px 21px;
+  gap: 40px 21px;
   align-content: start;
-  padding-top: 62px;
+  padding-top: 52px;
 
   @include vp-1365 {
     gap: 8px 15px;
@@ -49,13 +51,13 @@
   grid-column: 1/-1;
   order: -1;
   // margin-right: 3px;
-  font-family: $font-alumni;
-  font-size: 52px;
+  font-family: $font-alumni-semibold;
+  font-size: 54px;
   font-weight: 600;
   line-height: 54px;
   text-align: right;
-  text-transform: uppercase;
-  letter-spacing: 2.6px;
+  // text-transform: uppercase;
+  // letter-spacing: 2.6px;
 
   @include vp-1365 {
     margin-right: 0;
@@ -73,14 +75,14 @@
 }
 
 .hero h1 {
-  margin: 0;
+  margin: 1px 0 0 0;
   font-family: $font-alumni-extrabold;
   font-size: 92px;
   font-weight: 800;
   line-height: 110px;
   text-align: right;
   text-transform: uppercase;
-  letter-spacing: 4.5px;
+  letter-spacing: 4px;
   // padding-right: 2px;
 
   @include vp-1365 {
@@ -100,13 +102,13 @@
   align-self: end;
   order: -1;
   margin: 0;
-  padding: 52px 2px 51px 0;
+  padding: 52px 0 71px 0;
   font-family: $font-roboto;
   font-size: 14px;
   line-height: 22px;
   text-align: right;
   list-style: none;
-  letter-spacing: -0.05px;
+  // letter-spacing: -0.05px;
 
   @include vp-1365 {
     padding: 24px 0;
@@ -133,8 +135,10 @@
 
 .hero__button {
   grid-column: 1/-1;
-  width: 234px;
-  margin: 38px 0 0 auto;
+  max-width: 270px;
+  margin: 0 0 0 auto;
+  padding: 27px 20px 24px 20px;
+  letter-spacing: -0.15px;
 
   @include vp-1365 {
     width: 186px;
