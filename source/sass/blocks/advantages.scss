@@ -1,5 +1,5 @@
 .advantages {
-  padding: 120px 0 55px;
+  padding: 100px 0 55px;
   background-color: #f8f9fc;
 
   @include vp-1365 {
@@ -19,7 +19,7 @@
 .advantages__title {
   margin-bottom: 51px;
   text-align: center;
-  letter-spacing: 3px;
+  // letter-spacing: 3px;
 
   @include vp-1365 {
     margin-bottom: 20px;
@@ -33,10 +33,10 @@
 
 .advantages__list {
   display: grid;
-  grid-template-columns: 1fr 240px 1fr;
-  gap: 55px 60px;
+  grid-template-columns: 1fr 360px 1fr;
+  gap: 55px 40px;
   align-items: start;
-  max-width: 1040px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
@@ -184,8 +184,9 @@
   grid-row: 1 / span 2;
   grid-template-columns: 1fr;
   gap: 37px;
-  margin-top: 3px;
-  padding: 70px 25px 76px;
+  width: 360px;
+  margin: 0 auto 0;
+  padding: 55px 25px 50px;
   color: $color-default-white;
   text-align: center;
   background-color: $color-main-light2;
