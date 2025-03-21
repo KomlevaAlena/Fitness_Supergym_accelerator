@@ -1,5 +1,5 @@
 .judges {
-  padding: 60px 0 120px;
+  padding: 140px 0 120px;
 
   @include vp-1365 {
     padding: 42px 0 100px;
@@ -11,8 +11,8 @@
 }
 
 .judges__title {
-  margin: 0 auto 45px;
-  letter-spacing: 4px;
+  margin: 0 auto 46px;
+  // letter-spacing: 4px;
   width: max-content;
 
   @include vp-1365 {

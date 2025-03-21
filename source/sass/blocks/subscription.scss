@@ -2,7 +2,7 @@
   position: relative;
   z-index: 1;
   overflow: unset;
-  padding: 125px 0 120px;
+  padding: 100px 0 100px;
   background-color: #f8f9fc;
 
   &::before {
@@ -36,7 +36,7 @@
 }
 
 .subscription__title {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   text-align: center;
 
   @include vp-1365 {

@@ -1,5 +1,5 @@
 .games {
-  padding: 120px 0 60px;
+  padding: 100px 0 60px;
 
   @include vp-1365 {
     padding: 100px 0 60px;
@@ -22,9 +22,9 @@
 .games__wrapper {
   display: grid;
   grid-template-columns: 107px 1fr;
-  gap: 22px 141px;
+  gap: 29px 138px;
   align-content: start;
-  padding: 80px;
+  padding: 60px 80px 80px 80px;
   color: $color-default-white;
   background-color: $color-main-contrast;
 
@@ -44,12 +44,12 @@
 }
 
 .games__title {
-  margin: 0 0 0 2px;
+  margin: 1px 0 0 1px;
   font-family: $font-alumni;
-  font-size: 80px;
+  font-size: 78px;
   font-weight: 600;
-  line-height: 76px;
-  letter-spacing: 3px;
+  line-height: 96px;
+  letter-spacing: 1.75px;
 
   @media (width >= 1366px) {
     order: 1;
@@ -70,11 +70,11 @@
 
 .games__description {
   grid-column: 1 / -1;
-  margin: 0 0 0 3px;
+  margin: 0 0 0 0;
   font-size: 18px;
   font-weight: 300;
   line-height: 22px;
-  letter-spacing: -0.25px;
+  letter-spacing: -0.15px;
 
   @media (width >= 1366px) {
     order: 3;
@@ -118,8 +118,8 @@
 .games__button {
   grid-column: 1 / -1;
   max-width: none;
-  margin-top: 36px;
-  padding: 27px 20px 25px 20px;
+  margin-top: 3px;
+  padding: 28px 20px 25px 20px;
 
   @media (width >= 1366px) {
     order: 4;
