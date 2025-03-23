@@ -1,7 +1,7 @@
 
 .accordion {
   width: 100%;
-  margin: 0;
+  margin: -1px 0 0 0;
   padding: 0;
   list-style-type: none;
   border-top: 1px solid rgba(28, 51, 116, 0.2);
@@ -17,7 +17,7 @@
   grid-template-columns: 1fr auto;
   align-items: center;
   width: 100%;
-  padding: 24px 0;
+  padding: 23px 0;
 
   @include vp-767 {
     padding: 21px 0;
@@ -38,6 +38,9 @@
   }
 
   &:last-of-type {
+
+    margin: -2px 0 0 0;
+
     @include vp-767 {
       .accordion__title {
         width: 231px;
@@ -82,10 +85,10 @@
 
 .accordion__description {
   max-width: 660px;
-  margin: 0;
-  padding-bottom: 26px;
+  // margin: 19px 0 0 0;
+  padding: 19px 0 26px 0;
   line-height: 24px;
-  letter-spacing: 0.75px;
+  letter-spacing: 0.73px;
 
   p {
     margin: 0;
@@ -195,7 +198,7 @@
 
 .accordion__element.is-active .accordion__button {
   color: $color-default-white;
-
+  border: 1px solid $color-main-lignt;
   background-color: $color-main-light2;
 
   &::after {
