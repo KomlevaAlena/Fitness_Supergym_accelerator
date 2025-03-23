@@ -4,6 +4,10 @@
   border-image: linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62, 183, 1) 95.31%);
   border-image-slice: 1;
 
+  &:nth-of-type(2n) {
+    margin-top: 82px;
+  }
+
   @include vp-1365 {
     width: 100%;
 
@@ -35,7 +39,7 @@
   flex-direction: column;
   gap: 11px;
   height: 100%;
-  padding: 22px 28px 27px;
+  padding: 20px 20px 20px 20px;
 
   @include vp-1365 {
     padding: 19px 28px 28px;
@@ -179,8 +183,8 @@
   margin: 0;
   font-size: 16px;
   font-weight: 300;
-  line-height: 24px;
-  letter-spacing: -0.25px;
+  line-height: 22px;
+  letter-spacing: -0.15px;
 
   br {
     display: none;

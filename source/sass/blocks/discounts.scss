@@ -1,5 +1,5 @@
 .discounts {
-  padding: 100px 0 120px;
+  padding: 100px 0 100px;
 
   @include vp-1365 {
     padding: 101px 0 100px;
@@ -28,7 +28,7 @@
 .discounts__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 30px 40px;
   margin: 0;
   padding: 0;
   list-style-type: none;
