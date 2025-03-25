@@ -16,13 +16,13 @@
 
 .form__group input {
   width: 100%;
-  padding: 6px 0 4px;
+  padding: 6px 0 1px;
   font-family: $font-roboto;
   font-size: 14px;
   line-height: 22px;
   color: $color-default-white;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-bottom-color: rgba($color-default-white, 0.5);
 
   &::placeholder {

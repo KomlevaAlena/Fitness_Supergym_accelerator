@@ -1,5 +1,5 @@
 .reviews {
-  padding: 120px 0 66px;
+  padding: 100px 0 44px;
 
   @include vp-1365 {
     padding: 101px 0 20px;
@@ -11,7 +11,7 @@
 }
 
 .reviews__title {
-  margin: 0 0 46px;
+  margin: 0 0 75px;
   text-align: center;
 
   @include vp-1365 {
@@ -30,12 +30,12 @@
   padding: 0 20px;
 
   .slider__button--prev {
-    left: -13px;
+    left: -61px;
     top: 41%;
   }
 
   .slider__button--next {
-    right: -14px;
+    right: -61px;
     top: 41%;
   }
 

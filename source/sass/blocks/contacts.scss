@@ -1,5 +1,5 @@
 .contacts {
-  padding: 59px 0 59px 121px;
+  padding: 59px 0 59px 103px;
 
   @include vp-1365 {
     padding: 183px 87px 97px;
@@ -11,7 +11,7 @@
 }
 
 .contacts__title {
-  margin-bottom: 41px;
+  margin-bottom: 36px;
 
   @include vp-1365 {
     letter-spacing: 2.8px;
@@ -38,9 +38,10 @@
     content: "";
     top: 0;
     bottom: 0;
-    left: 50%;
+    right: 197px;
     transform: translateX(-50%);
     width: 1px;
+    height: 117px;
     background-color: #74819c;
   }
 
@@ -69,7 +70,15 @@
   list-style-type: none;
 
   &:nth-child(2n) {
-    padding-left: 36px;
+    padding-left: 44px;
+
+    .contacts-card:first-child .contacts-card__title {
+      margin: 0 0 4px 0;
+    }
+
+    .contacts-card:last-child .contacts-card__title {
+      margin: 0 0 4px 0;
+    }
   }
 
   @include vp-1365 {
