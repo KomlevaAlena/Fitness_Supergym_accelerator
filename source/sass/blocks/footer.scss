@@ -14,8 +14,8 @@
 
 .footer__container {
   display: grid;
-  grid-template-columns: 110px 1fr 110px;
-  gap: 20px;
+  grid-template-columns: 143px 1fr 110px;
+  gap: 154px;
 
   @include vp-1365 {
     gap: 25px;
@@ -25,8 +25,8 @@
 
 .footer__logo {
   display: block;
-  width: 107px;
-  height: 25px;
+  width: 130px;
+  height: 28px;
 
   svg {
     display: block;
