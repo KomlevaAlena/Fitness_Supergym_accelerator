@@ -20,6 +20,8 @@
   gap: 56px;
 
   @include vp-1365 {
+    margin: 0 auto;
+    width: 678px;
     grid-template-columns: repeat(2, 1fr);
     gap: 29px;
   }
@@ -61,9 +63,9 @@
 
   @include vp-1365 {
     margin-right: 0;
-    font-size: 40px;
+    font-size: 42px;
     line-height: 42px;
-    letter-spacing: 2.25px;
+    // letter-spacing: 2.25px;
   }
 
   @include vp-767 {
@@ -86,9 +88,10 @@
   // padding-right: 2px;
 
   @include vp-1365 {
-    font-size: 68px;
-    line-height: 86px;
-    letter-spacing: 2.45px;
+    margin: 0 0 0 0;
+    font-size: 72px;
+    line-height: 85px;
+   letter-spacing: 1.5px;
   }
 
   @include vp-767 {
@@ -111,7 +114,7 @@
   // letter-spacing: -0.05px;
 
   @include vp-1365 {
-    padding: 24px 0;
+    padding: 24px 0 24px 0;
   }
 
   @include vp-767 {
@@ -142,7 +145,8 @@
 
   @include vp-1365 {
     width: 186px;
-    margin: 40px 0 0 auto;
+    margin: 42px 0 0 auto;
+    padding: 22px 20px 21px 20px;
   }
 
   @include vp-767 {
