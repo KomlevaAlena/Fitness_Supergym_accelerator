@@ -26,11 +26,13 @@
 
   @include vp-1365 {
     line-height: 22px;
-    margin: 3px 0 0;
+    margin: 4px 0 0;
+    padding: 0 0 2px 0;
   }
 
   @include vp-767 {
     margin: 2px 0 0;
+
     font-size: 16px;
     line-height: 20px;
   }
@@ -49,9 +51,10 @@
   // border-top: 1px solid $color-default-white;
 
   @include vp-1365 {
+    align-items: center;
     font-size: 24px;
     line-height: 24px;
-    padding-top: 2px;
+    padding-top: 3px;
   }
 
   @include vp-767 {
@@ -68,9 +71,10 @@
   line-height: 22px;
 
   @include vp-1365 {
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 14px;
+    line-height: 22px;
     width: 30px;
-    padding: 3px 0 0 3px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 5px;
   }
 }

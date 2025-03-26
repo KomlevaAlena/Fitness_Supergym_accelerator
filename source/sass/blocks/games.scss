@@ -2,7 +2,7 @@
   padding: 100px 0 60px;
 
   @include vp-1365 {
-    padding: 100px 0 60px;
+    padding: 60px 0 60px;
   }
 
   @include vp-767 {
@@ -15,7 +15,9 @@
   grid-template-columns: 500px 1fr;
 
   @include vp-1365 {
-    grid-template-columns: 291px 1fr;
+    width: 678px;
+    padding: 0;
+    grid-template-columns: 300px 1fr;
   }
 }
 
@@ -29,9 +31,9 @@
   background-color: $color-main-contrast;
 
   @include vp-1365 {
-    width: 293px;
-    padding: 41px 45px 45px;
-    gap: 6px 39px;
+    width: 300px;
+    padding: 40px 45px 40px 40px;
+    gap: 10px 13px;
   }
 
   @include vp-767 {
@@ -56,9 +58,10 @@
   }
 
   @include vp-1365 {
-    font-size: 48px;
-    line-height: 46px;
-    letter-spacing: 1.44px;
+    margin: 0 0 0 0;
+    font-size: 46px;
+    line-height: 54px;
+    letter-spacing: 1px;
     width: 106px;
   }
 
@@ -85,6 +88,7 @@
     width: 202px;
     grid-column: 1 / 3;
     grid-row: 2 / 3;
+    line-height: 24px;
   }
 
   @include vp-767 {
@@ -109,7 +113,7 @@
   }
 
   @include vp-1365 {
-    width: 56px;
+    width: 100px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
@@ -126,7 +130,7 @@
   }
 
   @include vp-1365 {
-    margin-top: 15px;
+    margin-top: -1px;
   }
 
   @include vp-767 {
@@ -139,7 +143,7 @@
 
   @include vp-1365 {
     display: block;
-    width: 386px;
+    width: 378px;
 
     picture {
       display: block;
