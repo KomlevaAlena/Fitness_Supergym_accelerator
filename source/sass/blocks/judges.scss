@@ -2,7 +2,7 @@
   padding: 140px 0 100px;
 
   @include vp-1365 {
-    padding: 42px 0 100px;
+    padding: 36px 0 60px;
   }
 
   @include vp-767 {
@@ -16,9 +16,10 @@
   width: max-content;
 
   @include vp-1365 {
-    margin: 0 auto 39px;
+    margin: 0 auto 52px;
+    font-size: 54px;
     text-align: center;
-    letter-spacing: 1.55px;
+    letter-spacing: -0.5px;
   }
 
   @include vp-767 {
@@ -32,7 +33,7 @@
   padding: 0 60px;
 
   @include vp-1365 {
-    max-width: 686px;
+    max-width: 680px;
   }
 
   @include vp-767 {
@@ -52,7 +53,8 @@
   }
 
   @include vp-1365 {
-    left: -13px;
+    left: -10px;
+    top: 50%;
   }
 
   @include vp-767 {
@@ -77,7 +79,8 @@
   }
 
   @include vp-1365 {
-    right: -13px;
+    right: -10px;
+    top: 50%;
   }
 
   @include vp-767 {

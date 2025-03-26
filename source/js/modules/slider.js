@@ -17,7 +17,7 @@ export const slider = new Swiper('.judges__wrapper', {
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 32,
+      spaceBetween: 40,
     },
     1366: {
       slidesPerView: 4,
