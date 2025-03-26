@@ -1,12 +1,12 @@
 .gym {
-  padding: 114px 0 125px;
+  padding: 114px 0 125px 0;
 
   @include vp-1365 {
-    padding: 100px 0;
+    padding: 49px 0 37px 0;
   }
 
   @include vp-767 {
-    padding: 71px 0 30px;
+    padding: 71px 0 30px 0;
   }
 }
 
@@ -38,7 +38,7 @@
 
   @include vp-1365 {
     margin: 0 auto;
-    padding: 38px 0 83px;
+    padding: 36px 0 83px;
   }
 
   @include vp-767 {
@@ -57,9 +57,8 @@
   font-weight: 600;
 
   @include vp-1365 {
-    margin-bottom: 0;
+    margin: 6px 0 0 0;
     font-size: 42px;
-    letter-spacing: 1.9px;
   }
 
   @include vp-767 {
@@ -75,10 +74,9 @@
   line-height: 22px;
 
   @include vp-1365 {
-    margin: 20px 0 34px -5px;
+    margin: 13px 0 36px 0;
     font-size: 20px;
     line-height: 20px;
-    letter-spacing: 0;
   }
 
   @include vp-767 {
@@ -103,6 +101,7 @@
   @include vp-1365 {
     margin: 0 auto;
     max-width: 507px;
+    letter-spacing: -0.15px;
 
     &:last-of-type {
       display: none;
@@ -141,9 +140,9 @@
 
   @include vp-1365 {
     left: 50%;
-    top: 300px;
+    top: 296px;
     transform: translateX(-50%);
-    width: 39.3%;
+    width: 39.8%;
   }
 
   @include vp-767 {
@@ -194,7 +193,7 @@
     position: absolute;
     content: "";
     z-index: -1;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;

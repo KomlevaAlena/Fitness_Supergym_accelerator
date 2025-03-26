@@ -18,7 +18,7 @@
   }
 
   @include vp-1365 {
-    padding: 101px 0 146px;
+    padding: 61px 0 146px;
 
     &::before {
       right: 281px;
@@ -40,7 +40,7 @@
   text-align: center;
 
   @include vp-1365 {
-    letter-spacing: 1.9px;
+    letter-spacing: -0.1px;
   }
 
   @include vp-767 {
