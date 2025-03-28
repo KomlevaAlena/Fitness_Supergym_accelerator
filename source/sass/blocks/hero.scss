@@ -8,7 +8,7 @@
   }
 
   @include vp-767 {
-    padding-bottom: 70px;
+    padding-bottom: 33px;
   }
 }
 
@@ -28,6 +28,7 @@
 
   @include vp-767 {
     display: block;
+    width: 100%;
   }
 }
 
@@ -45,34 +46,30 @@
 
   @include vp-767 {
     gap: 14px 0;
-    padding-top: 26px;
+    padding-top: 39px;
   }
 }
 
 .hero span {
   grid-column: 1/-1;
   order: -1;
-  // margin-right: 3px;
   font-family: $font-alumni-semibold;
   font-size: 54px;
   font-weight: 600;
   line-height: 54px;
   text-align: right;
-  // text-transform: uppercase;
-  // letter-spacing: 2.6px;
 
   @include vp-1365 {
     margin-right: 0;
     font-size: 42px;
     line-height: 42px;
-    // letter-spacing: 2.25px;
   }
 
   @include vp-767 {
     margin-right: 0;
     font-size: 32px;
     line-height: 32px;
-    letter-spacing: 0.84px;
+    // letter-spacing: 0.84px;
   }
 }
 
@@ -85,7 +82,6 @@
   text-align: right;
   text-transform: uppercase;
   letter-spacing: 4px;
-  // padding-right: 2px;
 
   @include vp-1365 {
     margin: 0 0 0 0;
@@ -95,9 +91,9 @@
   }
 
   @include vp-767 {
-    font-size: 58px;
-    line-height: 70px;
-    letter-spacing: 3.8px;
+    font-size: 62px;
+    line-height: 62px;
+    letter-spacing: 0.75px;
   }
 }
 
@@ -111,7 +107,6 @@
   line-height: 22px;
   text-align: right;
   list-style: none;
-  // letter-spacing: -0.05px;
 
   @include vp-1365 {
     padding: 24px 0 24px 0;
@@ -119,7 +114,7 @@
 
   @include vp-767 {
     margin-right: 0;
-    padding: 2px 0;
+    padding: 0;
     line-height: 20px;
   }
 }
@@ -152,7 +147,8 @@
   @include vp-767 {
     width: 100%;
     max-width: 290px;
-    margin: 46px 0 0 auto;
-    padding: 21px 20px 22px;
+    margin: 33px 0 0 auto;
+    padding: 24px 20px 22px;
+    letter-spacing: 0;
   }
 }
