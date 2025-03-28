@@ -50,8 +50,8 @@
 
 @include vp-1365 {
   .reviews-card {
-    column-gap: 22px;
-    padding: 60px 65px 45px;
+    column-gap: 40px;
+    padding: 40px 30px 40px 30px;
   }
 
   .reviews-card.swiper-slide {
@@ -93,12 +93,22 @@
     font-weight: 400;
     line-height: 20px;
     margin: 0;
+
+    @include vp-1365 {
+      margin: 2px 0 0 0;
+      font-size: 21px;
+      letter-spacing: 0.5px;
+    }
   }
 
   .reviews-card__description {
-    margin-top: 12px;
-    margin-left: 0;
-    max-width: 330px;
+    font-family: $font-roboto-light;
+    // font-weight: 300;
+    margin: 20px 0 0 0;
+    max-width: 310px;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0;
   }
 }
 

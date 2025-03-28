@@ -49,6 +49,10 @@
 
     margin: -2px 0 0 0;
 
+    @include vp-1365 {
+      margin: 1px 0 0 0;
+    }
+
     @include vp-767 {
       .accordion__title {
         width: 231px;
@@ -110,8 +114,8 @@
   }
 
   @include vp-1365 {
-    padding: 9px 0 23px 0;
-    line-height: 25px;
+    padding: 10px 0 22px 0;
+    line-height: 24px;
     p {
       max-width: 560px;
     }
