@@ -4,7 +4,7 @@
   background-color: $color-main;
 
   @include vp-1365 {
-    padding: 100px 87px 20px;
+    padding: 65px 119px 20px 119px;
   }
 
   @include vp-767 {
@@ -21,9 +21,10 @@
   margin-bottom: 30px;
 
   @include vp-1365 {
-    font-size: 40px;
-    letter-spacing: 2.4px;
-    margin-bottom: 27px;
+    font-size: 54px;
+    // letter-spacing: 2.4px;
+    text-align: center;
+    margin: 0 auto 27px;
   }
 
   @include vp-767 {
@@ -42,7 +43,7 @@
     background-color: $color-main;
 
     @include vp-1365 {
-      gap: 29px 60px;
+      gap: 35px 30px;
     }
 
     @include vp-767 {
