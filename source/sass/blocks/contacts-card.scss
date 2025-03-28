@@ -3,7 +3,7 @@
     margin-top: 14px;
 
     @include vp-1365 {
-      margin-top: 25px;
+      margin-top: 15px;
     }
   }
 }
@@ -16,7 +16,8 @@
 
   @include vp-1365 {
     font-size: 22px;
-    margin: 0 0 9px;
+    margin: 0 0 6px;
+    letter-spacing: 0.95px;
   }
 
   @include vp-767 {
