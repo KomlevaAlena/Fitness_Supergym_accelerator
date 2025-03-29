@@ -6,7 +6,7 @@
   }
 
   @include vp-767 {
-    padding: 41px 0 70px;
+    padding: 36px 0 70px;
   }
 }
 
@@ -23,7 +23,9 @@
   }
 
   @include vp-767 {
-    margin: 0 auto 41px;
+    margin: 0 auto 19px;
+    font-size: 32px;
+    // letter-spacing: -0.5px;
   }
 }
 
@@ -38,7 +40,7 @@
 
   @include vp-767 {
     max-width: 290px;
-    padding: 0 32px;
+    padding: 0 15px;
   }
 }
 
@@ -58,6 +60,7 @@
   }
 
   @include vp-767 {
+    display: none;
     left: -6px;
 
     svg {
@@ -84,6 +87,8 @@
   }
 
   @include vp-767 {
+    display: none;
+
     right: -6px;
 
     svg {
@@ -97,4 +102,8 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @include vp-767{
+    max-height: 300px;
+  }
 }
