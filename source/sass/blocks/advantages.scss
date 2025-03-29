@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 71px 0 47px;
+    padding: 41px 0 38px;
 
     .container {
       padding: 0;
@@ -17,17 +17,18 @@
 
 
 .advantages__title {
-  margin-bottom: 51px;
+  margin: 0 0 51px 0;
   text-align: center;
   // letter-spacing: 3px;
 
   @include vp-1365 {
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     // letter-spacing: 1.65px;
   }
 
   @include vp-767 {
-    letter-spacing: 1.26px;
+    margin: 0 0 6px 0;
+    // letter-spacing: 1.26px;
   }
 }
 
@@ -65,14 +66,19 @@
     grid-column: 1/2;
 
     @include vp-767 {
+
       .advantages__content {
-        width: 162px;
+        width: 230px;
       }
     }
   }
 
   &:nth-child(2n) > :nth-child(2n) > :first-child {
     letter-spacing: -0.5px;
+
+    @include vp-767 {
+      letter-spacing: 0;
+    }
   }
 
   &:last-child > :nth-child(2n) > :last-child {
@@ -89,6 +95,7 @@
     }
 
     @include vp-767 {
+      gap: 0;
       .advantages__content {
         width: 207px;
       }
@@ -124,6 +131,20 @@
     gap: 23px;
     padding-bottom: 36px;
   }
+
+  @include vp-767 {
+    gap: 0;
+
+    &:nth-child(2n + 1).advantages__card--center {
+      gap: 0;
+      padding-bottom: 39px;
+    }
+
+    &:nth-last-child(-n + 2) > :nth-child(2n) > :first-child {
+      // letter-spacing: -0.1px;
+      margin: 11px 0 0 0;
+    }
+  }
 }
 
 .advantages__number {
@@ -147,8 +168,8 @@
   }
 
   @include vp-767 {
-    line-height: 14px;
-    margin: 4px 0 0;
+    line-height: 20px;
+    margin: 3px 0 0 0;
   }
 
   &:first-child {
@@ -165,9 +186,11 @@
     }
 
     @include vp-767 {
-      font-size: 64px;
-      line-height: 64px;
-      margin: 7px 0 0;
+      text-align: center;
+      font-size: 62px;
+      line-height: 60px;
+      margin: 8px 0 0;
+      letter-spacing: 1.55px;
     }
   }
 }
@@ -200,6 +223,7 @@
   }
 
   @include vp-767 {
+    margin: 10px 0 0 0;
     font-size: 18px;
     line-height: 22px;
   }
@@ -289,26 +313,27 @@
     width: 320px;
     grid-column: 1/2;
     grid-row: 3/4;
-    gap: 21px;
     padding: 20px 25px 39px;
     margin: 12px auto 8px;
 
     .advantages__number span {
       &:first-child {
-        font-size: 64px;
-        line-height: 70px;
-        letter-spacing: 0;
+        font-size: 62px;
+        line-height: 65px;
+        letter-spacing: 2px;
       }
     }
 
     .advantages__unit {
-      padding-top: 0;
+      padding: 0 0 0 0;
+      margin: 6px 0 0 0;
       font-size: 22px;
-      line-height: 20px;
+      line-height: 22px;
+      letter-spacing: 0.25px;
     }
 
     .advantages__description {
-      margin: 0 auto;
+      margin: 20px auto 0;
       width: 190px;
       line-height: 22px;
     }
