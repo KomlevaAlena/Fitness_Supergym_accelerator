@@ -72,10 +72,8 @@
   }
 
   @include vp-1365 {
-    // letter-spacing: -1px;
     font-size: 22px;
     line-height: 22px;
-
 
     br {
       display: block;
@@ -100,7 +98,6 @@
 
 .accordion__description {
   max-width: 660px;
-  // margin: 19px 0 0 0;
   padding: 19px 0 22px 0;
   line-height: 24px;
   letter-spacing: 0.73px;
@@ -196,18 +193,20 @@
   }
 
   @include vp-767 {
-    width: 32px;
-    height: 32px;
-    margin: 1px -1px 0 0;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 0;
 
     &::before {
       right: 7px;
+      top: 13px;
       width: 14px;
       height: 2px;
     }
 
     &::after {
       right: 7px;
+      top: 13px;
       transform: rotate(90deg);
       width: 14px;
       height: 2px;
