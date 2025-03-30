@@ -12,7 +12,9 @@
   }
 
   @include vp-767 {
-    margin: 25px auto 0;
+    gap: 20px;
+    margin: -2px 0 0;
+    justify-self: start;
     grid-column: 1/4;
     grid-row: 3/4;
   }
