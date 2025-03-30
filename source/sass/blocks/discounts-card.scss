@@ -12,7 +12,7 @@
     width: 100%;
 
     &:nth-of-type(2n) {
-      margin-top: 6px;
+      margin-top: 5px;
     }
 
     &:first-of-type {
@@ -21,7 +21,7 @@
     }
 
     &:last-of-type {
-      margin-top: 6px;
+      margin-top: 5px;
     }
   }
 
@@ -61,8 +61,8 @@
   padding: 20px 20px 20px 20px;
 
   @include vp-1365 {
-    padding: 18px 20px 20px;
-    gap: 6px;
+    padding: 17px 20px 20px;
+    gap: 7px;
   }
 
   @include vp-767 {
@@ -81,7 +81,7 @@
   border: none;
 
   .discounts-card__content {
-    gap: 28px;
+    gap: 21px;
     padding: 40px 44px 40px 45px;
 
     @include vp-1365 {
@@ -186,20 +186,17 @@
     text-align: center;
     line-height: 32px;
     letter-spacing: 0.65px;
-
-    //  &:not-first-of-type {
-    //   margin: 0 0 5px 0;
-    //  }
   }
 }
 
 .discounts-card__price {
-  margin: 0 0 20px;
+  margin: 0 0 20px 2px;
   font-size: 70px;
   font-weight: 700;
-  line-height: 70px;
+  line-height: 68px;
 
   @include vp-1365 {
+    margin: 0 0 20px 0;
     line-height: 46px;
   }
 
@@ -301,7 +298,7 @@
   }
 
   @include vp-1365 {
-    padding: 10px 0 5px;
+    padding: 9px 0 5px;
   }
 
   @include vp-767 {

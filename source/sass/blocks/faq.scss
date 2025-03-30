@@ -83,7 +83,7 @@
 
 .faq__button {
   max-width: none;
-  padding: 19px 20px 18px;
+  padding: 21px 20px 16px;;
   font-size: 18px;
   font-weight: 400;
   line-height: 17px;
@@ -111,6 +111,7 @@
 }
 
 .faq__button.is-active {
+  padding: 21px 20px 16px;
   color: $color-default-white;
   background-color: $color-main;
   background-image: $gradient;

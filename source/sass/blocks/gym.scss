@@ -141,7 +141,7 @@
     left: 50%;
     top: 296px;
     transform: translateX(-50%);
-    width: 39.8%;
+    width: 39.75%;
   }
 
   @include vp-767 {
@@ -202,7 +202,7 @@
     position: absolute;
     content: "";
     z-index: -1;
-    top: 52%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;

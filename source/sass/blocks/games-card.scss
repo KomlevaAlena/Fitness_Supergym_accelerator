@@ -2,6 +2,11 @@
   & + & {
     margin: 17px 0 0 0;
   }
+  &:last-of-type {
+    .games-card__number {
+      letter-spacing: 1.25px;
+    }
+  }
 
   @include vp-1365 {
     &:last-of-type {
@@ -48,7 +53,6 @@
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.5px;
-  // border-top: 1px solid $color-default-white;
 
   @include vp-1365 {
     align-items: center;

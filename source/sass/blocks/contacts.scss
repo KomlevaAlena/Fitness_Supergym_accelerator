@@ -2,7 +2,7 @@
   padding: 59px 0 59px 103px;
 
   @include vp-1365 {
-    padding: 106px 120px 59px;
+    padding: 106px 120px 58px;
   }
 
   @include vp-767 {
@@ -76,11 +76,19 @@
     padding-left: 44px;
 
     .contacts-card:first-child .contacts-card__title {
-      margin: 0 0 8px 0;
+      margin: 0 0 4px 0;
+
+      @include vp-1365 {
+        margin: 0 0 4px 0;
+      }
     }
 
     .contacts-card:last-child .contacts-card__title {
-      margin: 0 0 8px 0;
+      margin: 0 0 4px 0;
+
+      @include vp-1365 {
+        margin: 0 0 4px 0;
+      }
     }
   }
 
