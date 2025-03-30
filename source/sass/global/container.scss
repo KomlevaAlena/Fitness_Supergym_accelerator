@@ -3,6 +3,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  padding-top: 0;
+  padding-bottom: 0;
   width: 1366px;
 
   // планшетная версия — 768px - 1365px;
@@ -17,4 +19,9 @@
     padding: 0 15px;
     width: 320px;
   }
+}
+
+.main-container {
+  position: relative;
+  z-index: 1;
 }
