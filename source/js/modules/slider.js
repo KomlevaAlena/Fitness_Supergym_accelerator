@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import {Navigation, Pagination} from 'swiper/modules';
+import {Navigation, Pagination, Autoplay} from 'swiper/modules';
 import 'swiper/css';
 
 export const slider = new Swiper('.judges__wrapper', {
@@ -9,7 +9,11 @@ export const slider = new Swiper('.judges__wrapper', {
     nextEl: '.judges__button--prev',
     prevEl: '.judges__button--next',
   },
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, Autoplay],
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1,
