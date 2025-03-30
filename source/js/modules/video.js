@@ -1,3 +1,5 @@
+/* global YT */
+
 const initVideo = () => {
   const tag = document.createElement('script');
   tag.src = 'https://www.youtube.com/iframe_api';
@@ -21,4 +23,4 @@ const initVideo = () => {
   });
 };
 
-export {initVideo};
+export { initVideo };
