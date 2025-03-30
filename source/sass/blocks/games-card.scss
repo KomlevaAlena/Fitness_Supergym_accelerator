@@ -1,7 +1,8 @@
 .games-card {
   & + & {
-    margin: 17px 0 0 0;
+    margin: 17px 0 0;
   }
+
   &:last-of-type {
     .games-card__number {
       letter-spacing: 1.25px;
@@ -10,20 +11,20 @@
 
   @include vp-1365 {
     &:last-of-type {
-      margin: 6px 0 0 0;
+      margin: 6px 0 0;
     }
   }
 
   @include vp-767 {
     &:last-of-type {
-      margin: 2px 0 0 0;
+      margin: 2px 0 0;
     }
   }
 }
 
 .games-card__title {
-  margin: 0 0 0 0;
-  padding: 0 0 3px 0;
+  margin: 0;
+  padding: 0 0 3px;
   font-size: 18px;
   font-weight: 300;
   line-height: 29px;
@@ -32,11 +33,11 @@
   @include vp-1365 {
     line-height: 22px;
     margin: 4px 0 0;
-    padding: 0 0 2px 0;
+    padding: 0 0 2px;
   }
 
   @include vp-767 {
-    margin: 3px 0 0 0;
+    margin: 3px 0 0;
 
     font-size: 16px;
     line-height: 20px;
@@ -48,7 +49,7 @@
   flex-wrap: wrap;
   justify-content: start;
   width: fit-content;
-  padding: 8px 0 0 0;
+  padding: 8px 0 0;
   font-size: 39px;
   font-weight: 700;
   line-height: 40px;
@@ -62,14 +63,14 @@
   }
 
   @include vp-767 {
-    padding: 2px 0 0 0;
+    padding: 2px 0 0;
     align-items: start;
   }
 }
 
 .games-card__date {
   width: 45px;
-  margin: -3px 0 0 0;
+  margin: -3px 0 0;
   padding: 0 0 0 7px;
   font-size: 14px;
   font-weight: 400;
@@ -79,7 +80,7 @@
     font-size: 14px;
     line-height: 22px;
     width: 30px;
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0 0 0 5px;
   }
 

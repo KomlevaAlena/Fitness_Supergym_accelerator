@@ -76,18 +76,18 @@
     padding-left: 44px;
 
     .contacts-card:first-child .contacts-card__title {
-      margin: 0 0 4px 0;
+      margin: 0 0 4px;
 
       @include vp-1365 {
-        margin: 0 0 4px 0;
+        margin: 0 0 4px;
       }
     }
 
     .contacts-card:last-child .contacts-card__title {
-      margin: 0 0 4px 0;
+      margin: 0 0 4px;
 
       @include vp-1365 {
-        margin: 0 0 4px 0;
+        margin: 0 0 4px;
       }
     }
   }

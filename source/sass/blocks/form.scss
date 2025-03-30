@@ -54,14 +54,13 @@
     &::placeholder {
       color: rgba($color-default-white, 0.4);
     }
-
-
   }
 
   @include vp-1365 {
     padding: 14px 0 4px;
     font-size: 14px;
     line-height: 20px;
+
     // line-height: 0.5px;
   }
 
