@@ -26,8 +26,9 @@
   border-bottom-color: rgba($color-default-white, 0.5);
 
   &::placeholder {
+    font-family: $font-roboto;
     color: $color-default-white;
-    opacity: 1;
+    opacity: 0.8;
   }
 
   &:hover {
@@ -57,11 +58,9 @@
   }
 
   @include vp-1365 {
-    padding: 14px 0 4px;
+    padding: 14px 0 2px;
     font-size: 14px;
-    line-height: 20px;
-
-    // line-height: 0.5px;
+    line-height: 22px;
   }
 
   @include vp-767 {
