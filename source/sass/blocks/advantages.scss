@@ -15,9 +15,8 @@
   }
 }
 
-
 .advantages__title {
-  margin: 0 0 51px;
+  margin: 0 0 50px;
   text-align: center;
 
   @include vp-1365 {
@@ -107,7 +106,7 @@
 
   &:nth-child(2n + 1).advantages__card--center {
     gap: 30px;
-    padding-bottom: 32px;
+    padding: 57px 25px 58px 25px;
 
     @include vp-1365 {
       padding-bottom: 58px;
@@ -123,8 +122,13 @@
   }
 
   &:nth-last-child(-n + 2) > :nth-child(2n) > :first-child {
-    letter-spacing: -0.1px;
+    letter-spacing: 0.15px;
     margin: 0 0 0 1px;
+  }
+
+  &:nth-last-child(4n + 1) > :nth-child(2n) > :first-child {
+    letter-spacing: 0.25px;
+    margin: 0 0 0 2px;
   }
 
   @include vp-1365 {
@@ -174,7 +178,8 @@
 
   &:first-child {
     font-size: 70px;
-    font-weight: 700;
+    font-family: $font-roboto-bold;
+    font-weight: 600;
     line-height: 70px;
     color: transparent;
     background-color: currentColor;
@@ -198,7 +203,7 @@
 .advantages__content {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 7px;
 
   @include vp-1365 {
     gap: 10px;
@@ -213,9 +218,12 @@
 }
 
 .advantages__title-card {
+  width: max-content;
   margin: 0 -1px 0 0;
   font-size: 22px;
-  line-height: 22px;
+  font-family: $font-roboto-light;
+  line-height: 23px;
+  letter-spacing: 0.25px;
 
   @include vp-1365 {
     margin: 1px 0 0;
@@ -236,7 +244,7 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.1px;
 
   @include vp-1365 {
     line-height: 24px;
@@ -265,24 +273,32 @@
 
   .advantages__number span {
     color: inherit;
+    font-family: $font-roboto-bold;
+    font-weight: 600;
 
     &:first-child {
+      font-family: $font-roboto-bold;
+      font-weight: 600;
       font-size: 68px;
-      line-height: 68px;
-      letter-spacing: 1.5px;
+      line-height: 70px;
+      letter-spacing: 1.15px;
+      text-align: center;
       background: none;
     }
   }
 
   .advantages__unit {
-    padding-top: 12px;
+    padding-top: 11px;
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 26px;
   }
 
   .advantages__description {
-    letter-spacing: normal;
+    font-family: $font-roboto-light;
+    letter-spacing: 0.1px;
+    width: 280px;
+    margin: 0 auto;
   }
 
   @include vp-1365 {

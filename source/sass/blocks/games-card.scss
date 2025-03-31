@@ -1,11 +1,11 @@
 .games-card {
   & + & {
-    margin: 17px 0 0;
+    margin: 15px 0 0;
   }
 
   &:last-of-type {
     .games-card__number {
-      letter-spacing: 1.25px;
+      padding: 6px 0 0 0;
     }
   }
 
@@ -23,8 +23,10 @@
 }
 
 .games-card__title {
+  width: 95px;
   margin: 0;
   padding: 0 0 3px;
+  font-family: $font-roboto-light;
   font-size: 18px;
   font-weight: 300;
   line-height: 29px;
@@ -49,11 +51,11 @@
   flex-wrap: wrap;
   justify-content: start;
   width: fit-content;
-  padding: 8px 0 0;
-  font-size: 39px;
-  font-weight: 700;
+  padding: 7px 0 0;
+  font-family: $font-roboto-bold;
+  font-size: 40px;
+  font-weight: 600;
   line-height: 40px;
-  letter-spacing: 0.5px;
 
   @include vp-1365 {
     align-items: center;
@@ -70,11 +72,12 @@
 
 .games-card__date {
   width: 45px;
-  margin: -3px 0 0;
-  padding: 0 0 0 7px;
+  margin: -5px 0 0;
+  padding: 0 0 0 6px;
+  font-family: $font-roboto-light;
   font-size: 14px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 25px;
 
   @include vp-1365 {
     font-size: 14px;

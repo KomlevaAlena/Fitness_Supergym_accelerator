@@ -29,7 +29,7 @@
 .games__wrapper {
   display: grid;
   grid-template-columns: 107px 1fr;
-  gap: 29px 138px;
+  gap: 28px 138px;
   align-content: start;
   padding: 60px 80px 80px;
   color: $color-default-white;
@@ -51,12 +51,11 @@
 }
 
 .games__title {
-  margin: 1px 0 0 1px;
-  font-family: $font-alumni;
-  font-size: 78px;
+  margin: 0 0 0 0;
+  font-family: $font-alumni-semibold;
+  font-size: 82px;
   font-weight: 600;
-  line-height: 96px;
-  letter-spacing: 1.75px;
+  line-height: 97px;
 
   @media (width >= 1366px) {
     order: 1;
@@ -72,8 +71,6 @@
 
   @include vp-767 {
     font-size: 46px;
-
-    // letter-spacing: 2.4px;
   }
 }
 
@@ -132,8 +129,10 @@
 .games__button {
   grid-column: 1 / -1;
   max-width: none;
-  margin: 3px 0 0;
+  margin: 4px 0 0;
   padding: 28px 20px 25px;
+  font-family: $font-roboto-bold;
+  font-weight: 600;
 
   @media (width >= 1366px) {
     order: 4;
