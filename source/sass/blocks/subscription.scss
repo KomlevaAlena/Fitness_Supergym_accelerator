@@ -3,7 +3,7 @@
   background-color: #f8f9fc;
 
   @include vp-1365 {
-    padding: 100px 0 70px;
+    padding: 61px 0 70px;
   }
 
   @include vp-767 {
@@ -34,10 +34,9 @@
     max-width: 768px;
 
     &::before {
-      right: -251px;
-      bottom: -146px;
-      width: 347px;
-      height: 444px;
+      right: -77px;
+      bottom: -130px;
+      width: 400px;
     }
   }
 }
@@ -48,8 +47,8 @@
   max-width: 1160px;
 
   @include vp-1365 {
-    margin-bottom: 39px;
-    letter-spacing: -0.1px;
+    max-width: 1160px;
+    margin-bottom: 26px;
   }
 
   @include vp-767 {
@@ -61,6 +60,14 @@
 .subscription__wrapper {
   max-width: 1160px;
   margin: 0 auto;
+
+  @include vp-1365 {
+    max-width: 380px;
+  }
+
+  @include vp-767 {
+    max-width: 290px;
+  }
 }
 
 @include vp-767 {

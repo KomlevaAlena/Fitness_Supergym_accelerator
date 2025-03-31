@@ -9,13 +9,27 @@
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 
   @include vp-1365 {
-    margin-bottom: 43px;
-    padding-bottom: 12px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 310px;
+    margin: 36px auto 45px;
+    padding: 0 0 0 0;
+
+    &::before {
+      left: 0;
+      width: 332px;
+    }
   }
 
   @include vp-767 {
-    margin-bottom: 34px;
+    width: 290px;
+    margin: 20px auto 34px;
     padding-bottom: 13px;
+
+    &::before {
+      top: 33px;
+      width: 290px;
+    }
   }
 }
 
@@ -34,32 +48,17 @@
   border-bottom: 2px solid transparent;
   user-select: none;
 
-  @include vp-1365 {
-    padding: 10px 0;
-    font-size: 18px;
-    line-height: 18px;
-  }
-
-  @include vp-767 {
-    font-size: 16px;
-    line-height: 16px;
-  }
-
-  &:hover {
+  &:hover,
+  &:focus,
+  &:focus-visible,
+  &:active {
     color: $color-main;
     border-bottom-color: $color-main-contrast;
   }
 
   &:focus,
   &:focus-visible {
-    color: $color-main;
-    border-bottom-color: $color-main-contrast;
     outline: none;
-  }
-
-  &:active {
-    color: $color-main;
-    border-bottom-color: $color-main-contrast;
   }
 
   &:disabled {
@@ -67,64 +66,40 @@
     border-bottom-color: rgba(16, 38, 84, 0.3);
     pointer-events: none;
   }
-}
 
-.filter-list__link.is-active {
-  position: relative;
-  color: $color-main;
-  border-bottom-color: $color-main-contrast;
-
-  &::before {
-    position: absolute;
-    content: "";
-    display: block;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: $color-main-contrast;
-    z-index: 10;
-  }
-}
-
-@include vp-1365 {
-  .filter-list {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 310px;
-    margin: 0 auto;
-    margin-top: 35px;
-    padding: 0;
+  &.is-active {
+    color: $color-main;
 
     &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      bottom: -4px;
       left: 0;
-      width: 332px;
+      width: 100%;
+      height: 1px;
+      background-color: $color-main-contrast;
+      z-index: 10;
+
+      @include vp-1365 {
+        bottom: -5px;
+      }
     }
   }
 
-  .filter-list__link {
-    padding: 0 0 2px;
+  @include vp-1365 {
+    padding: 0 0 4px;
     font-size: 18px;
+    line-height: 18px;
 
     &:first-of-type {
       margin: 0;
     }
   }
-}
 
-@include vp-767 {
-  .filter-list {
-    width: 290px;
-    margin-top: 20px;
-
-    &::before {
-      top: 33px;
-      width: 290px;
-    }
-  }
-
-  .filter-list__link {
+  @include vp-767 {
     padding-bottom: 2px;
     font-size: 16px;
+    line-height: 16px;
   }
 }
