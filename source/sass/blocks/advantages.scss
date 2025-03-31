@@ -40,7 +40,7 @@
 
   @include vp-1365 {
     grid-template-columns: repeat(2, 1fr);
-    gap: 35px 30px;
+    gap: 36px 30px;
     padding-top: 27px;
   }
 
@@ -109,7 +109,8 @@
     padding: 57px 25px 58px;
 
     @include vp-1365 {
-      padding-bottom: 58px;
+      gap: 24px;
+      padding: 34px 25px 35px;
     }
 
     @include vp-767 {
@@ -137,8 +138,24 @@
     border-bottom: 2px solid transparent;
 
     &:nth-last-child(-n + 2) > :nth-child(2n) > :first-child {
-      letter-spacing: 0.5px;
+      letter-spacing: 0.25px;
       margin: 3px 0 1px 1px;
+    }
+
+    &:nth-child(4n) > .advantages__number > span:first-child {
+      margin: 2px 0 0 0;
+    }
+
+    &:nth-child(5n) > .advantages__number > span:first-child {
+      margin: 2px 0 0 0;
+    }
+
+    &:nth-child(4n) > .advantages__content {
+      gap: 9px;
+    }
+
+    &:nth-child(5n) > .advantages__content {
+      gap: 9px;
     }
   }
 
@@ -187,7 +204,7 @@
     background-clip: text;
 
     @include vp-1365 {
-      line-height: 75px;
+      line-height: 73px;
     }
 
     @include vp-767 {
@@ -248,7 +265,7 @@
 
   @include vp-1365 {
     line-height: 24px;
-    letter-spacing: 0;
+    letter-spacing: -0.15px;
   }
 
   @include vp-767 {
@@ -310,7 +327,7 @@
     padding: 35px 25px 34px;
 
     .advantages__unit {
-      padding-top: 26px;
+      padding: 25px 0 0 0;
       font-size: 24px;
     }
 
