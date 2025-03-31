@@ -2,64 +2,42 @@
   padding: 100px 0 98px;
   background-color: #f8f9fc;
 
-
-  .subscription__container {
-    position: relative;
-    z-index: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-
-    &::before {
-      position: absolute;
-      content: "";
-      right: -251px;
-      bottom: -146px;
-      width: 471px;
-      height: 494px;
-      background-image: url("../img/weight-plates.webp");
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: contain;
-    }
-
-  }
-
   @include vp-1365 {
     padding: 100px 0 70px;
-
-    // &::before {
-    //   right: 0;
-    //   bottom: 50px;
-    //   width: 347px;
-    //   height: 444px;
-    // }
-
-    .subscription__container {
-      position: relative;
-      z-index: 1;
-      max-width: 768px;
-      margin: 0 auto;
-
-      &::before {
-        position: absolute;
-        content: "";
-        right: -251px;
-        bottom: -146px;
-        width: 347px;
-        height: 444px;
-        background-image: url("../img/weight-plates.webp");
-        background-repeat: no-repeat;
-        background-position: left;
-        background-size: contain;
-      }
-    }
   }
 
   @include vp-767 {
     padding: 70px 0 30px;
+  }
+}
+
+.subscription__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: -251px;
+    bottom: -146px;
+    width: 471px;
+    height: 494px;
+    background-image: url("../img/weight-plates.webp");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+  }
+
+  @include vp-1365 {
+    max-width: 768px;
 
     &::before {
-      display: none;
+      right: -251px;
+      bottom: -146px;
+      width: 347px;
+      height: 444px;
     }
   }
 }
@@ -83,4 +61,10 @@
 .subscription__wrapper {
   max-width: 1160px;
   margin: 0 auto;
+}
+
+@include vp-767 {
+  .subscription__container::before {
+    display: none;
+  }
 }

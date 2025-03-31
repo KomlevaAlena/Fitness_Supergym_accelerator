@@ -106,7 +106,7 @@
 
   &:nth-child(2n + 1).advantages__card--center {
     gap: 30px;
-    padding: 57px 25px 58px 25px;
+    padding: 57px 25px 58px;
 
     @include vp-1365 {
       padding-bottom: 58px;

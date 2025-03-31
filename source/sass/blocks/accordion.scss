@@ -7,11 +7,11 @@
 }
 
 .accordion-item:nth-child(2n) .accordion__button-wrapper {
-  padding: 23px 0 22px 0;
+  padding: 23px 0 22px;
 }
 
 .accordion-item:nth-last-child(2n) .accordion__button-wrapper {
-  padding: 23px 0 22px 0;
+  padding: 23px 0 22px;
 }
 
 .accordion__element {
@@ -194,7 +194,7 @@
   display: block;
 }
 
-.accordion__title br, {
+.accordion__title br {
   display: none;
 }
 
