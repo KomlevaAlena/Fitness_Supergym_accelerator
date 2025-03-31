@@ -39,4 +39,8 @@
   @include vp-1365 {
     letter-spacing: -0.05px;
   }
+
+  @include vp-767 {
+    letter-spacing: 0;
+  }
 }
