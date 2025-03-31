@@ -51,7 +51,6 @@
 .accordion__description p {
   margin: 0;
   font-family: $font-roboto-light;
-  letter-spacing: 0.9px;
 }
 
 .accordion__description p + p {
@@ -87,7 +86,7 @@
 }
 
 .accordion__description p br {
-  display: block;
+  display: none;
 }
 
 @include vp-1365 {
