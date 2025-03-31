@@ -15,13 +15,15 @@
       margin-top: 5px;
 
       .discounts-card__title {
-        font-size: 24px;
-        line-height: 31px;
-        letter-spacing: 1.05px;
+        margin: 0;
+        font-family: $font-roboto-light;
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 0.9px;
       }
 
       .discounts-card__content {
-        gap: 8px;
+        gap: 7px;
       }
     }
 
@@ -34,12 +36,15 @@
       margin-top: 5px;
 
       .discounts-card__title {
-        font-size: 24px;
-        line-height: 31px;
+        margin: 0;
+        font-family: $font-roboto-light;
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 0.9px;
       }
 
       .discounts-card__content {
-        gap: 8px;
+        gap: 7px;
       }
     }
   }
@@ -135,10 +140,14 @@
   .discounts-card__button {
     color: $color-default-white;
 
+
     @include vp-1365 {
       min-width: 74px;
       margin-top: 0;
-      padding: 9px 0 5px;
+      padding: 9px 0 7px;
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: 1.25px;
     }
 
     @include vp-767 {
@@ -321,7 +330,10 @@
 
   @include vp-1365 {
     min-width: 74px;
-    padding: 8px 0 5px;
+    padding: 9px 0 7px;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1.25px;
   }
 
   @include vp-767 {
