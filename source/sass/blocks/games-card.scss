@@ -12,6 +12,10 @@
   @include vp-1365 {
     &:last-of-type {
       margin: 6px 0 0;
+
+      .games-card__number {
+        padding: 2px 0 0;
+      }
     }
   }
 
@@ -33,6 +37,7 @@
   border-bottom: 1px solid $color-default-white;
 
   @include vp-1365 {
+    width: 100px;
     line-height: 22px;
     margin: 4px 0 0;
     padding: 0 0 2px;
