@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 0 30px;
+    padding: 40px 0 30px;
   }
 }
 
@@ -39,6 +39,10 @@
       width: 400px;
     }
   }
+
+  @include vp-767 {
+    max-width: 320px;
+  }
 }
 
 .subscription__title {
@@ -52,7 +56,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     line-height: 33px;
   }
 }
