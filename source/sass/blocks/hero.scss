@@ -93,7 +93,7 @@
 }
 
 .hero h1 {
-  margin: 1px 0 0 0;
+  margin: 1px 0 0;
   font-family: $font-alumni-extrabold;
   font-size: 92px;
   font-weight: 800;
@@ -103,7 +103,7 @@
   letter-spacing: 4px;
 
   @include vp-1365 {
-    margin: 2px 0 0 0;
+    margin: 2px 0 0;
     font-size: 72px;
     line-height: 85px;
     letter-spacing: 1.65px;

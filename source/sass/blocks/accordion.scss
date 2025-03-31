@@ -6,10 +6,7 @@
   border-top: 1px solid rgba(28, 51, 116, 0.2);
 }
 
-.accordion-item:nth-child(2n) .accordion__button-wrapper {
-  padding: 23px 0 22px;
-}
-
+.accordion-item:nth-child(2n) .accordion__button-wrapper,
 .accordion-item:nth-last-child(2n) .accordion__button-wrapper {
   padding: 23px 0 22px;
 }
@@ -98,16 +95,9 @@
     padding: 23px 0;
   }
 
-  .accordion-item:nth-child(2n) .accordion__button-wrapper {
-    padding: 24px 0 22px;
-  }
-
+  .accordion-item:nth-child(2n) .accordion__button-wrapper,
   .accordion-item:nth-last-child(2n) .accordion__button-wrapper {
-    padding: 23px 0 23px;
-  }
-
-  .accordion-item:nth-child(2n) .accordion__button-wrapper {
-    padding: 24px 0 23px;
+    padding: 24px 0 22px;
   }
 
   .accordion__title {
@@ -148,11 +138,11 @@
   }
 
   .accordion-item:not(:first-of-type) .accordion__button-wrapper {
-    padding: 20px 0 20px;
+    padding: 20px 0;
   }
 
   .accordion-item:last-of-type {
-    margin: 0 0 0;
+    margin: 0;
   }
 
   .accordion-item:last-of-type .accordion__title {
@@ -175,7 +165,7 @@
     width: 264px;
     font-size: 16px;
     line-height: 20px;
-    padding: 20px 0 20px;
+    padding: 20px 0;
   }
 
   .accordion__button {
@@ -227,8 +217,6 @@
 .accordion__element.is-active .accordion__button::after {
   display: none;
 }
-
-
 
 .accordion__title br {
   display: none;

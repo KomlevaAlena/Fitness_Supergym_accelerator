@@ -33,11 +33,11 @@
   width: 100%;
 
   @include vp-1365 {
-    padding: 58px 20px 58px;
+    padding: 58px 20px;
   }
 
   @include vp-767 {
-    padding: 43px 20px 43px;
+    padding: 43px 20px;
   }
 
   &:hover,

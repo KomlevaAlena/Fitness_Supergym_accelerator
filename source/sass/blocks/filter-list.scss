@@ -13,7 +13,7 @@
     justify-content: space-between;
     width: 310px;
     margin: 36px auto 45px;
-    padding: 0 0 0 0;
+    padding: 0;
 
     &::before {
       left: 0;
@@ -24,7 +24,7 @@
   @include vp-767 {
     width: 290px;
     margin: 20px auto 30px;
-    padding: 0 0 2px 0;
+    padding: 0 0 2px;
 
     &::before {
       top: 33px;
@@ -67,26 +67,6 @@
     pointer-events: none;
   }
 
-  &.is-active {
-    color: $color-main;
-
-    &::before {
-      position: absolute;
-      content: "";
-      display: block;
-      bottom: -4px;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background-color: $color-main-contrast;
-      z-index: 10;
-
-      @include vp-1365 {
-        bottom: -5px;
-      }
-    }
-  }
-
   @include vp-1365 {
     padding: 0 0 4px;
     font-size: 18px;
@@ -101,5 +81,28 @@
     padding-bottom: 2px;
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+.filter-list__link.is-active {
+  position: relative;
+  color: $color-main;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-main-contrast;
+    z-index: 10;
+  }
+
+  @include vp-1365 {
+    &::before {
+      bottom: -5px;
+    }
   }
 }

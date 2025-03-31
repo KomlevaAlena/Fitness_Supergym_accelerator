@@ -143,11 +143,11 @@
     }
 
     &:nth-child(4n) > .advantages__number > span:first-child {
-      margin: 2px 0 0 0;
+      margin: 2px 0 0;
     }
 
     &:nth-child(5n) > .advantages__number > span:first-child {
-      margin: 2px 0 0 0;
+      margin: 2px 0 0;
     }
 
     &:nth-child(4n) > .advantages__content {
@@ -171,14 +171,15 @@
     }
 
     &:nth-child(4n) > .advantages__number > span:first-child {
-      margin: 7px 0 0 0;
+      margin: 7px 0 0;
     }
+
     &:nth-child(4n) > .advantages__number > span:last-child {
-      margin: 1px 0 0 0;
+      margin: 1px 0 0;
     }
 
     &:nth-child(5n) > .advantages__number > span:first-child {
-      margin: 8px 0 0 0;
+      margin: 8px 0 0;
     }
 
     &:nth-child(5n) > .advantages__content > .advantages__title-card {
@@ -213,7 +214,7 @@
 
   @include vp-767 {
     line-height: 20px;
-    margin: 0 0 0;
+    margin: 0;
   }
 
   &:first-child {
@@ -350,7 +351,7 @@
     padding: 35px 25px 34px;
 
     .advantages__unit {
-      padding: 25px 0 0 0;
+      padding: 25px 0 0;
       font-size: 24px;
     }
 
