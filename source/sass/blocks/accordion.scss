@@ -136,7 +136,7 @@
 
 @include vp-767 {
   .accordion {
-    padding: 41px 0 38px;
+    padding: 0 0 38px;
   }
 
   .accordion__button-wrapper {
@@ -148,15 +148,15 @@
   }
 
   .accordion-item:not(:first-of-type) .accordion__button-wrapper {
-    padding-bottom: 20px;
+    padding: 20px 0 20px;
   }
 
   .accordion-item:last-of-type {
-    margin: -2px 0 0;
+    margin: 0 0 0;
   }
 
   .accordion-item:last-of-type .accordion__title {
-    width: 231px;
+    width: 235px;
   }
 
   .accordion__title {
@@ -165,10 +165,16 @@
     width: 163px;
   }
 
+  .accordion__title > br {
+    display: block;
+  }
+
   .accordion__description {
     max-width: 290px;
+    width: 264px;
+    font-size: 16px;
     line-height: 20px;
-    padding: 21px 0 19px;
+    padding: 20px 0 20px;
   }
 
   .accordion__button {
@@ -234,8 +240,7 @@
 }
 
 @include vp-767 {
-  .accordion__title br,
   .accordion__description p br {
-    display: block;
+    display: none;
   }
 }
